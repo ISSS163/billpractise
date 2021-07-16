@@ -1,1 +1,1811 @@
+insert into SEC_ROLE
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, NAME, LOC_NAME, DESCRIPTION, ROLE_TYPE, IS_DEFAULT_ROLE, SYS_TENANT_ID, SECURITY_SCOPE)
+values ('d9e55d60-dfc5-4892-1513-aeed2cf47c2f', 1, '2021-07-16 01:10:43', 'admin', '2021-07-16 01:10:43', null, null, null, 'ViewBills', null, null, 0, true, null, 'GENERIC_UI');
 
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('2d988667-2628-dd8e-89dd-8308720ec283', 1, '2021-07-16 03:38:52', 'admin', '2021-07-16 03:38:52', null, null, null, 10, 'sec$Role.lookup', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('7f53f713-42b9-c2a1-3017-9f94f9f0d02a', 1, '2021-07-16 03:28:09', 'admin', '2021-07-16 03:28:09', null, null, null, 10, 'sys$EntitySnapshot.view', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('3b71b321-1be1-bdb9-e771-63c827894930', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$Group:name', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('b3ddab3f-10a3-4511-4bdc-914d98170fd8', 1, '2021-07-16 03:48:10', 'admin', '2021-07-16 03:48:10', null, null, null, 20, 'sec$Group:read', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('42cd0aad-d7dc-a4cc-0466-a072a5c252b7', 1, '2021-07-16 03:44:47', 'admin', '2021-07-16 03:44:47', null, null, null, 10, 'thirdpartyLicenseWindow', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('54d6be9c-7332-dadf-b963-aaf10da81f88', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$Role:locSecurityScope', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('c7c5e0f3-c552-0226-dd6b-aa3d85cc7acf', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$Group:sessionAttributes', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('95daff6d-172d-1fed-ee12-cb6bbbde00c7', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$SessionLogEntry:startedTs', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('078b4fd5-2684-fd36-0aa1-175014eec2e9', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'billpractise_Operation:category', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('1c6c48d1-1107-c72d-51dd-3ee42123ee91', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'billpractise_Operation:createTs', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('b4b85484-8e36-a2d0-b386-92cbdc7e91f4', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$User:login', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('465a986b-70c9-7a33-3be0-3c423ffc3ab5', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$Role:locName', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('83f54ba4-425d-29cf-261b-f0a52c25697e', 1, '2021-07-16 03:38:52', 'admin', '2021-07-16 03:38:52', null, null, null, 10, 'sec$User.changePassword', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('df421fb8-84d5-2857-152a-c4de50a19d04', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$Group:deleteTs', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('0c2bbe2f-f4f3-e58b-2ff4-94ad73f3ddfc', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$User:id', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('e49e77b4-4676-727f-3fd8-b37421c73264', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$Role:defaultRole', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('10f54eb0-cb95-0e18-5593-e7b18c06bfc1', 1, '2021-07-16 03:44:47', 'admin', '2021-07-16 03:44:47', null, null, null, 10, 'appPropertyEditor', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('8cc4f46c-ab3b-22f0-db6f-e78862ded577', 1, '2021-07-16 03:35:36', 'admin', '2021-07-16 03:35:36', null, null, null, 10, 'customConditionEditor', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('cce35d0e-4033-0f21-a78b-907a4f36d016', 1, '2021-07-16 03:32:39', 'admin', '2021-07-16 03:32:39', null, null, null, 10, 'jmxConsoleEditAttribute', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('92dc943e-744b-e95d-bb5b-4cd138c8fc98', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$User:createTs', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('45852159-194d-af06-d85e-bf45af5704f4', 1, '2021-07-16 03:28:09', 'admin', '2021-07-16 03:28:09', null, null, null, 10, 'localizedNameFrame', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('37bca452-93d4-e64b-ee33-a0e90816aa8c', 1, '2021-07-16 03:44:47', 'admin', '2021-07-16 03:44:47', null, null, null, 10, 'runtimePropertiesFrame', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('cc25ea4d-009d-e2a2-63c2-2418ece05f59', 1, '2021-07-16 03:32:39', 'admin', '2021-07-16 03:32:39', null, null, null, 10, 'loginWindow', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('52757226-ff09-7a54-0a42-1ba04ff9f720', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'billpractise_Bill:updateTs', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('232f56ec-77c4-dada-4a23-d2b71308e378', 1, '2021-07-16 03:32:39', 'admin', '2021-07-16 03:32:39', null, null, null, 10, 'settings', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('71b30e74-a2cf-51be-fb08-8a0d6f79cef3', 1, '2021-07-16 03:41:32', 'admin', '2021-07-16 03:41:32', null, null, null, 10, 'sys$ScheduledExecution.browse', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('8bd54f8b-6775-deb9-668b-1e79d0bff1e5', 1, '2021-07-16 03:35:36', 'admin', '2021-07-16 03:35:36', null, null, null, 10, 'list-editor-popup', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('b94e8164-2ed4-0f2c-d114-3ef3e081aa8f', 1, '2021-07-16 03:43:10', 'admin', '2021-07-16 03:43:10', null, null, null, 10, 'entityRestore', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('20bf3dfc-654b-686c-c999-f9c2be8922f7', 1, '2021-07-16 03:35:36', 'admin', '2021-07-16 03:35:36', null, null, null, 10, 'date-interval-editor', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('78c5976e-0735-8207-0930-bb00450279e9', 1, '2021-07-16 03:38:52', 'admin', '2021-07-16 03:38:52', null, null, null, 10, 'sec$User.browse', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('c672a3fb-51be-806a-0f3d-6e445c4be72c', 1, '2021-07-16 03:41:32', 'admin', '2021-07-16 03:41:32', null, null, null, 10, 'sys$SendingMessage.browse', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('4c5f34d8-e104-40d6-ee87-2de46521b753', 1, '2021-07-16 02:53:01', 'admin', '2021-07-16 02:53:01', null, null, null, 10, 'application-billpractise', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('01e8e315-721a-a617-543a-da79c8f57000', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$User:updatedBy', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('0605cba5-54e4-58b6-d394-f2f93a3dfaeb', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$SessionLogEntry:clientInfo', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('ff21da2f-84b5-f95e-4510-469111c7cce9', 1, '2021-07-16 03:38:52', 'admin', '2021-07-16 03:38:52', null, null, null, 10, 'sessionMessageWindow', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('a4715961-cd36-8189-4b03-f2de0dae4791', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$User:password', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('659df4d0-14eb-2765-020f-7f72f13dc0cd', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'billpractise_Bill:version', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('bb6cd031-5288-66f3-9975-876ad933385e', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'billpractise_Operation:amount', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('c119994f-0175-e31c-3660-d332976bf65e', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$Group:sysTenantId', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('526de5a9-cc40-a64a-d8f2-4ab64fcf1a1f', 1, '2021-07-16 03:28:09', 'admin', '2021-07-16 03:28:09', null, null, null, 10, 'entityInspector.browse', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('854124b4-feb8-0734-c91b-ca1fa9b91a9f', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$SessionLogEntry:createTs', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('62c1b43e-b1ab-ce82-1934-7237511fe795', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$User:updateTs', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('1d34256e-0df8-923f-bbe3-b53b81451861', 1, '2021-07-16 03:28:09', 'admin', '2021-07-16 03:28:09', null, null, null, 10, 'sys$Category.browse', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('e88a0a86-2255-9485-7029-ade62dce00bf', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$SessionLogEntry:finishedTs', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('f192616d-5717-ca40-b4ae-c22d2a82b9cc', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$Group:id', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('478357a8-8d1d-0053-fdf7-0e46212e719c', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$Role:description', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('d0b0e152-1ee5-3666-36f1-9df955477f44', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$User:middleName', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('50d3d42e-6274-9dcc-aaf7-d8197f376ef1', 1, '2021-07-16 03:43:10', 'admin', '2021-07-16 03:43:10', null, null, null, 10, 'inputDialog', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('583dc179-5fb3-b180-7c73-d11dc83ddc56', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'billpractise_Bill:name', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('af4ff244-a8e4-9aaf-5964-bf6fa1f9ccc1', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$Role:deletedBy', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('645379c5-6b68-e4ba-ab75-736585bc299b', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$Role:id', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('66eca6e5-9dd1-7fd3-ad11-bca79507e4cc', 1, '2021-07-16 03:28:09', 'admin', '2021-07-16 03:28:09', null, null, null, 10, 'localizedEnumerationWindow', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('07f01b04-3b82-d8af-6711-0554ca060fe3', 1, '2021-07-16 03:44:47', 'admin', '2021-07-16 03:44:47', null, null, null, 10, 'creditsFrame', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('925cacfb-345e-81d0-aba7-a723801185c5', 1, '2021-07-16 03:41:32', 'admin', '2021-07-16 03:41:32', null, null, null, 10, 'sys$SendingMessage.attachments', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('72045eb5-7fb2-e4e7-ca71-5cc1c33454e0', 1, '2021-07-16 03:32:39', 'admin', '2021-07-16 03:32:39', null, null, null, 10, 'main', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('86be4f48-bc9a-3465-6679-5f687db7bd2f', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'billpractise_Bill:updatedBy', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('afe96e3c-e40a-4b1e-6060-12fb3ed93a03', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$SessionLogEntry:user', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('79f2698b-0de2-0bec-920d-06545d9e9b31', 1, '2021-07-16 03:43:10', 'admin', '2021-07-16 03:43:10', null, null, null, 10, 'sys$FileDescriptor.edit', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('096ce5c8-66e9-b2b6-5b56-c7db1e42cab0', 1, '2021-07-16 03:38:52', 'admin', '2021-07-16 03:38:52', null, null, null, 10, 'sec$UserSessionEntity.browse', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('618c5bea-09e7-1603-304b-97ffafe9295b', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$User:name', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('ed076fd7-6e69-a787-1ac7-f32b3476c022', 1, '2021-07-16 03:44:47', 'admin', '2021-07-16 03:44:47', null, null, null, 10, 'bulkEditor', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('91a7d757-4142-840d-ce92-a7d572e0a490', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$SessionLogEntry:deleteTs', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('598a2e1c-2f71-0476-ca48-ba97d6710cb3', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$User:deleteTs', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('ee0ba4f2-3605-f3b6-e4dc-93872c83de1f', 1, '2021-07-16 03:41:32', 'admin', '2021-07-16 03:41:32', null, null, null, 10, 'sys$ScheduledTask.browse', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('24a105be-4364-c41f-af6f-e54bf2e1842f', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$Group:version', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('9f316ce4-b7e8-7c2c-81ab-b24292611d09', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'billpractise_Operation:type', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('8c198a85-f102-3cf1-7e7e-653229a99b19', 1, '2021-07-16 03:38:52', 'admin', '2021-07-16 03:38:52', null, null, null, 10, 'sec$Group.lookup', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('726e6d23-b2b9-ab85-8be0-7b9382f0e26a', 1, '2021-07-16 03:35:36', 'admin', '2021-07-16 03:35:36', null, null, null, 10, 'dynamicAttributesConditionEditor', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('beff467e-84cc-85e3-1495-a88c0ef0efde', 1, '2021-07-16 03:41:32', 'admin', '2021-07-16 03:41:32', null, null, null, 10, 'ResendMessage', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('68efd707-37d1-2807-d7dc-72775aeadbe6', 1, '2021-07-16 03:32:39', 'admin', '2021-07-16 03:32:39', null, null, null, 10, 'screenProfiler', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('0acac464-295e-fd06-61b9-cb99d9f459bd', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'billpractise_Operation:createdBy', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('f7a67d06-eff4-b2b0-720f-3b92e173bb95', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$Group:createdBy', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('164b2dfb-519b-09af-a4a6-cd172ea00236', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$User:position', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('8050e47c-adc3-d1e9-a23c-134a9e027fd7', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'billpractise_Bill:id', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('f0b11f58-7acd-95ad-f22b-333379afa495', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'billpractise_Operation:updateTs', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('ab5f3116-21b3-7034-26a5-b025bc6c0393', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'billpractise_Bill:deleteTs', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('6d279050-3937-b366-5d86-6ab6c1cca36b', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$Role:updateTs', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('adf980ce-faad-33c6-66b0-88a1364018bc', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$SessionLogEntry:lastAction', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('1a3be5b7-3614-6833-beb6-ba3504567fca', 1, '2021-07-16 03:35:36', 'admin', '2021-07-16 03:35:36', null, null, null, 10, 'ftsConditionFrame', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('5117bcfc-d7c8-21c8-af1b-ce4849c3abcf', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$User:ipMask', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('8e750ab0-b403-3660-a1eb-f6e6cb018c6a', 1, '2021-07-16 03:32:39', 'admin', '2021-07-16 03:32:39', null, null, null, 10, 'serverLogLoggerControlDialog', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('deaa34c9-ee2c-7f42-111f-7a7a59332b9b', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$Group:updatedBy', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('19bb34bc-c968-768b-2161-7ff468160ea2', 1, '2021-07-16 03:35:36', 'admin', '2021-07-16 03:35:36', null, null, null, 10, 'saveFilter', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('0a745376-932e-c16f-54f6-fc41a8f1d9c3', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$Role:sysTenantId', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('d30069ec-725a-f1d6-504b-b34ea56145ce', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$User:active', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('04420808-773b-5581-7f32-068141fd1272', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$User:group', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('3530ade1-e55b-65fc-5575-cc50bad94147', 1, '2021-07-16 03:28:09', 'admin', '2021-07-16 03:28:09', null, null, null, 10, 'sys$CategoryAttribute.edit', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('c488709c-3b75-366f-0e8a-578c4c17a0d0', 1, '2021-07-16 03:48:10', 'admin', '2021-07-16 03:48:10', null, null, null, 20, 'sec$User:read', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('ba45c224-35e4-6cff-e4e8-2758bf0c8d09', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$User:firstName', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('d9e44e14-9640-a5ee-6499-87e7b1897679', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$User:substitutions', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('d9249ab8-cdfe-0cd2-ef60-83069ac474c0', 1, '2021-07-16 03:41:32', 'admin', '2021-07-16 03:41:32', null, null, null, 10, 'sys$ScheduledTask.edit', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('2ff229ef-d8f5-e934-bd6b-c9f1efb1be20', 1, '2021-07-16 03:32:39', 'admin', '2021-07-16 03:32:39', null, null, null, 10, 'serverLogAddLoggerDialog', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('1a87fe82-e066-15f2-6823-5229ba81f7cd', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$User:timeZone', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('08449e4b-db21-8e2d-9102-eb3d29015ce6', 1, '2021-07-16 03:35:36', 'admin', '2021-07-16 03:35:36', null, null, null, 10, 'propertyConditionFrame', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('fc89669a-76e7-bd3c-0662-9ec0bca07115', 1, '2021-07-16 03:36:36', 'admin', '2021-07-16 03:36:36', null, null, null, 10, 'backgroundWorkProgressWindow', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('bcafe103-0059-4cbb-ef7a-408e3e606405', 1, '2021-07-16 03:35:36', 'admin', '2021-07-16 03:35:36', null, null, null, 10, 'lookupWindowActions', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('7499f350-ddf2-c778-bc7d-240ef8fbc114', 1, '2021-07-16 03:32:39', 'admin', '2021-07-16 03:32:39', null, null, null, 10, 'sec$ScreenHistory.browse', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('bce77348-fe2e-5b0c-e775-d9b4a63a7494', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$Role:createdBy', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('415c6da2-8a2d-0172-1b4f-b2a2d863accb', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$Group:createTs', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('40eec2d4-95a4-1b3e-a3a9-3269bfa61020', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$SessionLogEntry:updateTs', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('dd5630f4-dc63-dce1-f3f7-afc1aa287bd6', 1, '2021-07-16 03:44:47', 'admin', '2021-07-16 03:44:47', null, null, null, 10, 'appProperties', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('8f29e5b1-fce3-2d37-f3ed-0acb9b2521a4', 1, '2021-07-16 03:35:36', 'admin', '2021-07-16 03:35:36', null, null, null, 10, 'filterSelect', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('f2384c54-72cd-535d-ac3f-1c151dda6ae7', 1, '2021-07-16 03:41:32', 'admin', '2021-07-16 03:41:32', null, null, null, 10, 'sysInfoWindow', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('4d64baad-ca37-a0ea-b40b-23fe6e4d0040', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'billpractise_Bill:currency', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('9e292c65-67fb-a7cc-92b4-aa3968fe22e7', 1, '2021-07-16 03:38:52', 'admin', '2021-07-16 03:38:52', null, null, null, 10, 'sec$User.edit', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('a82678e1-44c4-1934-4f1f-fb529d28fca0', 1, '2021-07-16 03:32:39', 'admin', '2021-07-16 03:32:39', null, null, null, 10, 'login', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('182b2732-d597-64f6-8736-de073c86593d', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'billpractise_Operation:deletedBy', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('dddb9864-6ea0-66e9-6488-369eb4450f57', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$Role:securityScope', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('981b7d65-e796-3b68-b3d6-f76af276b9bc', 1, '2021-07-16 03:43:10', 'admin', '2021-07-16 03:43:10', null, null, null, 10, 'sys$LockInfo.browse', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('100e940a-a1cd-7c44-83f8-239d8f461251', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$Group:parent', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('327b9280-24d9-c422-07a5-16aa020c4203', 1, '2021-07-16 03:36:36', 'admin', '2021-07-16 03:36:36', null, null, null, 10, 'commonLookup', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('95a3d0fe-185b-0e41-9566-85b19d824713', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$SessionLogEntry:createdBy', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('343ebcd5-fb48-e0e2-d885-10000656e296', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$User:userRoles', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('67d8741d-6182-e575-a28e-8543f17a7a82', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$SessionLogEntry:userData', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('b328409c-d792-ed7a-1b89-f4d205d3e0df', 1, '2021-07-16 03:38:52', 'admin', '2021-07-16 03:38:52', null, null, null, 10, 'sec$User.resetPasswords', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('cdeffdf8-92b4-1560-2b90-489c90c4b106', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'billpractise_Operation:deleteTs', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('60cf073d-1a15-a2be-be66-43131fc330fa', 1, '2021-07-16 03:43:10', 'admin', '2021-07-16 03:43:10', null, null, null, 10, 'sys$LockDescriptor.edit', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('87e7c006-dd57-e22a-5ada-bd0d5022aa70', 1, '2021-07-16 03:38:52', 'admin', '2021-07-16 03:38:52', null, null, null, 10, 'sec$Group.edit', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('1b70f4d5-893e-c486-c1ba-ba588e2464c1', 1, '2021-07-16 03:32:39', 'admin', '2021-07-16 03:32:39', null, null, null, 10, 'serverLogDownloadOptionsDialog', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('05709b41-4b64-af96-643b-d57d16887411', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$User:version', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('1cf0292d-d899-1e13-bd14-4ec1d29dc502', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$Group:deletedBy', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('676e96fe-97d6-093a-e132-566a55d77cd1', 1, '2021-07-16 03:43:10', 'admin', '2021-07-16 03:43:10', null, null, null, 10, 'entityLog', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('2a88f5b6-8bcf-e055-41d0-ee7a87b3239b', 1, '2021-07-16 03:38:52', 'admin', '2021-07-16 03:38:52', null, null, null, 10, 'sec$SessionLogEntry.browse', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('2e72bf3e-0d9e-8172-932d-4ce620916bd0', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$User:timeZoneAuto', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('92ae58b2-af1a-f8cb-5b87-87258a33286e', 1, '2021-07-16 03:41:32', 'admin', '2021-07-16 03:41:32', null, null, null, 10, 'sys$ScheduledRunningTasksScreen', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('bbfe55b9-7eda-2462-f60f-9f0b8741d389', 1, '2021-07-16 03:35:36', 'admin', '2021-07-16 03:35:36', null, null, null, 10, 'customConditionFrame', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('95c78567-1b1e-bdc1-6026-fe71cef8a1e3', 1, '2021-07-16 03:38:52', 'admin', '2021-07-16 03:38:52', null, null, null, 10, 'sec$Role.browse', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('7b886e48-fb7f-d545-6d75-d8b829d0e4d3', 1, '2021-07-16 03:35:36', 'admin', '2021-07-16 03:35:36', null, null, null, 10, 'dynamicAttributesConditionFrame', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('76d754a2-fb0c-b00c-4fbf-808f85509022', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'billpractise_Operation:version', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('feb1c371-934a-82d7-b929-eb74a0402579', 1, '2021-07-16 03:38:52', 'admin', '2021-07-16 03:38:52', null, null, null, 10, 'sec$User.newPasswords', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('1124c621-9f64-47ba-a4b5-816c5ea4f39c', 1, '2021-07-16 03:35:36', 'admin', '2021-07-16 03:35:36', null, null, null, 10, 'extendedEditWindowActions', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('06c22036-f4d2-4d00-56aa-cbfc58e83fa4', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$User:deletedBy', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('38954228-78d2-82d5-7071-7251626253c6', 1, '2021-07-16 03:44:47', 'admin', '2021-07-16 03:44:47', null, null, null, 10, 'appPropertiesExport', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('a72eb31c-90f6-1408-0ebd-ba3f34633d6d', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$SessionLogEntry:address', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('8495f0ba-9ee3-6e20-87c8-8603a513a371', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$SessionLogEntry:deletedBy', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('49098be5-4e2b-4f93-ddab-34d020668f0e', 1, '2021-07-16 01:10:43', 'admin', '2021-07-16 01:10:43', null, null, null, 10, 'billpractise_Bill.browse', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('ac4d6c41-8529-0b01-ceb7-37cdb6dceacb', 1, '2021-07-16 03:38:52', 'admin', '2021-07-16 03:38:52', null, null, null, 10, 'sec$SessionAttribute.edit', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('e74b8cfe-8657-fc9f-1920-de75f890c7f2', 1, '2021-07-16 03:28:09', 'admin', '2021-07-16 03:28:09', null, null, null, 10, 'sys$Category.edit', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('a11b793b-4eb9-6e89-7fd2-39833a1e9d15', 1, '2021-07-16 03:32:39', 'admin', '2021-07-16 03:32:39', null, null, null, 10, 'sys$JmxInstance.lookup', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('55aea593-8851-8c45-4cd3-4a5205abd44d', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$User:sysTenantId', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('5561ac97-3417-6294-5020-2b885e5851d4', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$Role:deleteTs', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('403282b0-5fea-a0b5-daa6-73ae416380e2', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$User:createdBy', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('9095516b-99a7-9e86-f367-b537a0ee8f34', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$User:email', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('185dc70f-ee71-9ccb-d2e1-a756764e334b', 1, '2021-07-16 03:48:10', 'admin', '2021-07-16 03:48:10', null, null, null, 20, 'billpractise_Bill:read', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('0f4d498d-e21d-a4af-8f23-7460a2188a74', 1, '2021-07-16 03:44:47', 'admin', '2021-07-16 03:44:47', null, null, null, 10, 'entityInspector.edit', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('58b0fbda-5f73-a8b5-7e60-45130e10f4af', 1, '2021-07-16 03:32:39', 'admin', '2021-07-16 03:32:39', null, null, null, 10, 'serverLog', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('9203c7f3-2bf3-39ac-c07a-2f87299c74ab', 1, '2021-07-16 03:32:39', 'admin', '2021-07-16 03:32:39', null, null, null, 10, 'jmxConsole', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('b8edf1f8-095a-1724-a2bc-178cc6c8c1f4', 1, '2021-07-16 03:43:10', 'admin', '2021-07-16 03:43:10', null, null, null, 10, 'fileUploadDialog', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('7e48eaf4-a3df-47be-f536-1ab9190e793b', 1, '2021-07-16 03:43:10', 'admin', '2021-07-16 03:43:10', null, null, null, 10, 'sys$FileDescriptor.browse', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('747c21bc-ad4d-0bf1-3a60-e540eca57f9e', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'billpractise_Operation:date', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('d44b77b5-5d54-bf85-a93b-1093d1c91626', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$SessionLogEntry:version', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('552636d2-5af7-2e76-1884-7ad2ef57a71f', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'billpractise_Bill:createdBy', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('f4d4da11-92f6-119f-e758-843e7bb43a15', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$Role:updatedBy', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('548131a4-3fc3-6d85-4f11-1c5f3daafaea', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$User:loginLowerCase', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('1741eeba-1266-402c-1ac0-a90bad478853', 1, '2021-07-16 03:32:39', 'admin', '2021-07-16 03:32:39', null, null, null, 10, 'mainWindow', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('ed1a0d62-b7a2-b6d3-2fdb-5b8bc3752542', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'billpractise_Bill:funds', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('68b16530-760d-7103-b23e-99b8e40d5275', 1, '2021-07-16 01:10:43', 'admin', '2021-07-16 01:10:43', null, null, null, 10, 'billpractise_Operation.browse', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('e3ba6dae-d329-35a1-3f39-d2e0fdb79381', 1, '2021-07-16 03:38:52', 'admin', '2021-07-16 03:38:52', null, null, null, 10, 'sec$User.copySettings', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('3d57d841-4709-c207-384a-4015ba411d72', 1, '2021-07-16 03:28:09', 'admin', '2021-07-16 03:28:09', null, null, null, 10, 'attributesLocationFrame', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('0153879e-d59b-97c6-bd89-0fafc5b1de72', 1, '2021-07-16 03:32:39', 'admin', '2021-07-16 03:32:39', null, null, null, 10, 'threadsMonitoringWindow', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('4a6649ad-e86f-d4ac-4cf9-00dafc8614da', 1, '2021-07-16 03:32:39', 'admin', '2021-07-16 03:32:39', null, null, null, 10, 'sys$JmxInstance.edit', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('badf4a32-3ed4-7728-443d-cf65a783f8b3', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$SessionLogEntry:server', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('ddc9d9b0-b13c-6bd6-9b02-379a0e4b1b3a', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'billpractise_Bill:createTs', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('359647f5-baa9-76f5-5819-edbc959a057c', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'billpractise_Operation:comment', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('455ffa3f-5e49-265a-fafe-c23d7940dd8d', 1, '2021-07-16 03:28:09', 'admin', '2021-07-16 03:28:09', null, null, null, 10, 'localizedNameAndDescriptionFrame', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('ff72e850-2176-dc4b-bca5-433f00655a9d', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$SessionLogEntry:sysTenantId', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('9fc55810-0f96-ed26-7284-88231bfa9546', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$SessionLogEntry:updatedBy', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('c5bc0ded-706b-902e-988d-54bfd043a91a', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$SessionLogEntry:substitutedUser', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('b34578a1-7c6a-73ba-68f0-8b8cdd41978c', 1, '2021-07-16 03:35:36', 'admin', '2021-07-16 03:35:36', null, null, null, 10, 'addCondition', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('f971a007-dee4-1a17-aeaf-257cf4c24311', 1, '2021-07-16 03:38:52', 'admin', '2021-07-16 03:38:52', null, null, null, 10, 'sec$Constraint.edit', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('0845b0bc-85ab-f4dc-8bbb-dd59b26ec684', 1, '2021-07-16 03:35:36', 'admin', '2021-07-16 03:35:36', null, null, null, 10, 'filterEditor', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('e7aca4cd-2fac-0ca0-1da4-671e8975c224', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'billpractise_Bill:operation', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('c301911b-617f-dcb2-fc21-67df805051f1', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'billpractise_Bill:deletedBy', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('b41d45b8-f6fb-db8e-01b2-07cf5ad7cbf1', 1, '2021-07-16 03:38:52', 'admin', '2021-07-16 03:38:52', null, null, null, 10, 'sec$Group.browse', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('82623c71-58e3-2b88-7389-0ac4cadd7365', 1, '2021-07-16 03:38:52', 'admin', '2021-07-16 03:38:52', null, null, null, 10, 'sec$Role.edit', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('141fd147-8377-b0bb-691c-34f5cd076fee', 1, '2021-07-16 03:38:52', 'admin', '2021-07-16 03:38:52', null, null, null, 10, 'sec$User.lookup', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('ede99817-40e2-51eb-86d5-f9c73379970a', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$SessionLogEntry:sessionId', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('98433450-7160-d881-a21a-daf4e76d7fe6', 1, '2021-07-16 03:25:33', 'admin', '2021-07-16 03:25:33', null, null, null, 10, 'aboutWindow', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('bf8e1c60-8f26-a3df-fcfe-25fbfebdb535', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$Role:type', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('133b6516-ad9c-ddb2-b387-9dec091a06da', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$Role:createTs', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('1209d5dd-7f09-ab18-7870-b64fb40e5e5b', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'billpractise_Bill:archive', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('f88e4d9a-4f5d-c17e-f2d2-b709e4f4b1ab', 1, '2021-07-16 03:35:36', 'admin', '2021-07-16 03:35:36', null, null, null, 10, 'jmxConsoleOperationResult', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('39b90ff4-ce43-ffb3-1aee-85103fd67026', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$User:passwordEncryption', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('5e48ab36-90bd-e5ac-a2f9-c977d617444e', 1, '2021-07-16 03:32:39', 'admin', '2021-07-16 03:32:39', null, null, null, 10, 'notFoundScreen', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('f0bca72b-224d-37c3-cf12-eea8732b2731', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$Role:permissions', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('d49d7aba-952f-a18d-2598-4e8e8f786751', 1, '2021-07-16 03:48:10', 'admin', '2021-07-16 03:48:10', null, null, null, 20, 'billpractise_Operation:read', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('c978f687-b348-afe0-1019-e3523629a3f7', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$Role:name', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('4b8b6210-b568-f808-41bd-55b36b755043', 1, '2021-07-16 03:48:10', 'admin', '2021-07-16 03:48:10', null, null, null, 20, 'sec$Role:read', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('67784b27-66b0-2a31-a963-8971428be581', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$User:lastName', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('3bc085b1-2b74-5d23-569c-8ff0ea6ec2ed', 1, '2021-07-16 03:38:52', 'admin', '2021-07-16 03:38:52', null, null, null, 10, 'sec$LocalizedConstraintMessage.edit', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('eff833cc-8469-9f48-8fde-448f7da0202b', 1, '2021-07-16 03:48:10', 'admin', '2021-07-16 03:48:10', null, null, null, 20, 'sec$SessionLogEntry:read', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('b7f987b6-e248-a0db-d057-a987b58bb348', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'billpractise_Operation:id', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('fc901d6d-63b3-b084-aaab-040c5af1c74c', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$User:changePasswordAtNextLogon', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('0cbdb3e6-de4e-2ef3-5174-f722e69c96fe', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$User:language', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('e620d79a-82a5-fc46-a410-bf04831fce81', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$SessionLogEntry:id', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('50232094-9a64-1def-f5d5-ea9048e77f4b', 1, '2021-07-16 03:32:39', 'admin', '2021-07-16 03:32:39', null, null, null, 10, 'performanceStatistics', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('a68618f4-d48b-e4c7-5c4c-6130a02fd8b5', 1, '2021-07-16 03:44:47', 'admin', '2021-07-16 03:44:47', null, null, null, 10, 'layoutAnalyzer', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('91763cb8-b057-4551-98af-f4a8172c243a', 1, '2021-07-16 03:35:36', 'admin', '2021-07-16 03:35:36', null, null, null, 10, 'editWindowActions', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('17732ce9-ed2c-0758-6a8a-e90e8f1970a9', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'billpractise_Operation:bill', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('67ab1a03-ea1c-35bb-c241-82f9d2ada1c6', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$Group:updateTs', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('6ade8ee6-dd7d-1883-ce8b-35babe935787', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$Role:version', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('6fdbe587-588b-3ae9-066e-58a89c60757f', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'billpractise_Operation:updatedBy', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('fc92459f-1aa5-509e-32d7-123f6f6b9f5c', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$SessionLogEntry:clientType', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('21dc904b-b07b-a95f-36ad-b95e5f1671bd', 1, '2021-07-16 03:32:39', 'admin', '2021-07-16 03:32:39', null, null, null, 10, 'jmxConsoleInspectMbean', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('33792ed4-c34e-0c1f-c035-29e4833c69fd', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$Group:constraints', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('db9b387f-bf29-50ab-167e-7c1e71d40a3c', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$User:groupNames', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('27ee4741-b333-b9ea-93b7-0b90c892452c', 1, '2021-07-16 03:38:52', 'admin', '2021-07-16 03:38:52', null, null, null, 10, 'sec$UserSubstitution.edit', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('15ce23b9-1892-13e6-0b78-e42a7809b3b7', 1, '2021-07-16 03:49:30', 'admin', '2021-07-16 03:49:30', null, null, null, 30, 'sec$Group:hierarchyList', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('f7fc0023-39cd-7772-ed5e-6f3a806d069e', 1, '2021-07-16 03:36:36', 'admin', '2021-07-16 03:36:36', null, null, null, 10, 'backgroundWorkWindow', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('7e6808a6-2b20-b673-6422-2c36b37cdf0e', 1, '2021-07-16 03:43:10', 'admin', '2021-07-16 03:43:10', null, null, null, 10, 'multiuploadDialog', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('97edfdde-0a2f-a8db-2849-a6f7d43f09b8', 1, '2021-07-16 03:35:36', 'admin', '2021-07-16 03:35:36', null, null, null, 10, 'groupConditionFrame', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('e63cf237-ccda-4463-58dc-ebb764ef62c9', 1, '2021-07-16 03:32:39', 'admin', '2021-07-16 03:32:39', null, null, null, 10, 'saveSetInFolder', 1, 'd9e55d60-dfc5-4892-1513-aeed2cf47c2f');
+
+insert into SEC_ROLE
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, NAME, LOC_NAME, DESCRIPTION, ROLE_TYPE, IS_DEFAULT_ROLE, SYS_TENANT_ID, SECURITY_SCOPE)
+values ('dfd07920-1a38-7670-a22c-748703919d83', 1, '2021-07-16 01:11:42', 'admin', '2021-07-16 01:11:42', null, null, null, 'EditOperations', null, null, 0, null, null, 'GENERIC_UI');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('47e40096-5c1a-69d9-34a6-5ab02bd03277', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$User:active', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('cb255d06-989b-c637-dce4-c49d144863b9', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'billpractise_Bill:deleteTs', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('81037218-f41b-e58e-fdfa-9471d6f70af9', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$Group:updatedBy', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('0024a79b-041a-6e15-3b72-e52e9bf57f08', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$Group:deletedBy', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('b80541eb-ec17-2497-fee1-97ce2d9aadca', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$SessionLogEntry:userData', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('3f30c781-94b9-e09f-22fa-ca0dae975de2', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$Role:deleteTs', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('68c7a2e4-0180-3420-8458-5729d6d2263a', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 20, 'billpractise_Operation:create', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('0fbabd0c-ad21-92a9-c6b7-c4a711df09ed', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'billpractise_Bill:updatedBy', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('228cf539-ed6d-2f16-97f2-1dd1abd4ed27', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$SessionLogEntry:finishedTs', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('98e2ab68-94b2-8cd3-6aa6-c3103018f05a', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$User:updateTs', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('3a9c2378-cd3b-1e1d-6027-4380788f66cb', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'billpractise_Bill:name', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('06962976-de8a-5d40-cc63-5dfd55fd4c6a', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$Role:createdBy', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('9dded227-f715-8f36-1dd5-428f18aecd0b', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$Role:description', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('1d665586-84a3-0fb0-2b1f-bcc81fc24bca', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$Role:permissions', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('ad1ce25e-3e20-235c-ec9a-edf86a367258', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$SessionLogEntry:deleteTs', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('69304cd3-f52f-6a27-f31f-155feb33a2aa', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$SessionLogEntry:startedTs', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('17391cab-8cf1-f05b-4583-80aea19a9dbb', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'billpractise_Operation:bill', 2, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('10442f10-40ce-72d1-bf3c-ec16ce6dc938', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'billpractise_Operation:updateTs', 2, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('fd43831a-c38c-fa79-4e0d-9fdb2b451f0a', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'billpractise_Operation:createdBy', 2, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('348f64ae-42de-ba34-3089-13744d64f465', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'billpractise_Operation:category', 2, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('ee3a927a-b1a7-a859-ff91-59390fe81ec6', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$User:createTs', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('b6be895c-0c4f-f701-9c7d-e7dc445ed56a', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$SessionLogEntry:updatedBy', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('40543952-cd76-6b58-ba0a-19985bfc667d', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$User:deletedBy', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('f3962748-6ec5-7a9d-d0c9-f2ee1472b4ee', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$SessionLogEntry:clientType', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('4f7e3ce8-c3a7-c0b8-8c7c-c43f993571be', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$Group:parent', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('402bb00b-e2b4-f934-2a97-defb543d17b3', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'billpractise_Bill:currency', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('ad12082a-a672-eed0-43ee-f92e529e8286', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'billpractise_Bill:id', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('957f84d1-270d-adaf-0494-a92b7872c982', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$User:position', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('7f9a9598-cee3-1f4d-a6a1-5e7353ff63cf', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$User:updatedBy', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('d55539aa-6096-09b7-a014-be3042d34866', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$User:lastName', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('14a0cf93-de91-81ae-d04a-1a4902bb93e0', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$User:userRoles', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('f51968f2-fb15-9ed2-628d-fd50b9444ee3', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'billpractise_Operation:amount', 2, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('c2e7660d-4919-2b14-18ff-1af79e5cd0e5', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$Group:createdBy', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('eed7fd30-19d9-53f0-99aa-7894b497ae30', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$SessionLogEntry:updateTs', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('43c8a2f6-ad56-2bf9-067a-c513f19f8930', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$User:email', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('e6947bb8-7a30-9172-3059-1b1437a893d3', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$User:id', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('83aa8c2f-3d81-13df-314e-355368211cbc', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$User:password', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('9691c136-787a-b02c-03bd-e2eea21dd9e3', 1, '2021-07-16 01:11:42', 'admin', '2021-07-16 01:11:42', null, null, null, 10, 'billpractise_Bill.browse', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('cf4192c0-f640-d0a1-893c-daa8deeeae46', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$Group:sessionAttributes', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('203f0613-db33-3613-eb4b-31f241cd2624', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$User:groupNames', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('c1006e6e-1ba9-c4eb-31b7-6b38f8978169', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$User:loginLowerCase', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('2eccc080-810f-580c-9bad-940f66c70375', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 20, 'billpractise_Operation:read', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('0aa356b9-f65f-c63f-b9f0-a56b47c82676', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$SessionLogEntry:id', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('8c93df37-46c2-6bc5-e473-130c0b15e6ab', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'billpractise_Operation:updatedBy', 2, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('997fd2ce-774e-4b3f-0ce8-a425f8fcca92', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$Role:name', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('86771780-11c8-5424-81e6-060abc6a2cf9', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'billpractise_Operation:comment', 2, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('83e679f8-58b8-a3a5-25c9-b9f62d8acdd1', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 20, 'billpractise_Operation:update', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('1e62a8f0-ccfb-1245-23c7-0c7e1ac43336', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$Role:defaultRole', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('97d9c5ad-a748-17f1-244a-27e792fb6ff3', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$Group:hierarchyList', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('75e2fe71-5485-22e6-80b4-0639e1056c10', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$User:passwordEncryption', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('e1fc2b5f-c22a-8848-ec77-dbff0b47da64', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$SessionLogEntry:createTs', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('02eeee16-921e-25fb-d13f-4484210a7fc0', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$Role:updateTs', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('7920ccdf-6143-b10c-4560-6ab00a245029', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$Group:createTs', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('445aeecb-c4a2-550e-bd0f-4dd2e009e286', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$SessionLogEntry:sessionId', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('e9b582a5-da2e-2abb-2657-7ed7c54c313c', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$User:sysTenantId', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('c5fd2082-e466-6db0-c760-4c4d5853dba0', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'billpractise_Operation:date', 2, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('6c39619f-5b04-a3ea-e5e5-f1a073dee8a9', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$User:substitutions', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('ea61ed0e-d8d9-c8ad-ff87-d450b33f7d88', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$User:createdBy', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('245e5862-b29a-c949-b21f-175f6ae0ce31', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'billpractise_Bill:archive', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('f5f900fc-bd6e-a1cb-416a-553d231b8493', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'billpractise_Bill:createTs', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('89866ecd-4816-a3c2-3098-07037f08208d', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$Group:sysTenantId', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('9bfa5a95-5a99-6e3d-04e1-98e966fc1fba', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'billpractise_Operation:deleteTs', 2, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('d45e5979-6941-dc79-f521-b5ba8e775375', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'billpractise_Bill:version', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('18786d50-1d2d-80ec-77bf-01317a05e1ea', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$Role:securityScope', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('4b3e46c4-8167-b93e-cde8-9971fe807730', 1, '2021-07-16 01:11:42', 'admin', '2021-07-16 01:11:42', null, null, null, 10, 'billpractise_Operation.browse', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('825c83a8-0ea9-03f4-5dd9-41f6f477ec60', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'billpractise_Operation:createTs', 2, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('9ec5ec51-e65c-3225-b3a0-ee5f5fb27131', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'billpractise_Operation:version', 2, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('d84d9cbc-8aa5-45a7-1c2d-6defdf760cd2', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$Role:version', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('5299a452-c5f7-c17a-1d5d-f7cdcce50ba6', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$User:language', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('9b47f48a-7506-cee4-600b-27fc5fac62e2', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$Role:createTs', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('71b36d21-b7af-6b69-f6dd-7c6d94028071', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$Role:id', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('4d72f86a-448c-3c46-4ea5-512e7bdf741e', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$SessionLogEntry:substitutedUser', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('7bc41fc4-d54c-c063-0f24-b4e8d967c118', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$User:timeZoneAuto', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('4ce8677e-4ddc-9055-c3f0-ca87d6cad23f', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$User:deleteTs', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('973d0464-7892-01f3-e0b7-ba5a128110c9', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$User:timeZone', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('b11397b0-f9ab-b23d-388e-f3f7c568de85', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$User:name', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('64dcc4c3-a3ac-99dd-0a85-f4f3d10b96b1', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'billpractise_Bill:operation', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('9b4cc2d5-1e45-81cd-ccf4-3333c7ee5a96', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$Group:name', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('3a2a7976-bcdb-5c36-18b7-de96e5fdd6de', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$Role:deletedBy', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('06f5eb14-4382-4395-da50-038b020e9096', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$User:ipMask', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('2a77d492-013a-7dfb-1530-a293ca146525', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$Role:updatedBy', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('5dcceee3-b8f7-859b-5e64-515a68b74173', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'billpractise_Operation:type', 2, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('0d273088-e517-dd5b-6f58-7fb709619bd1', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$SessionLogEntry:version', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('aa9416f7-d015-d724-c202-ebfccf84df95', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$SessionLogEntry:server', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('fc7eaa64-9003-2fd0-3398-7c21ecacb862', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'billpractise_Bill:deletedBy', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('3cddbd62-21fc-b7b5-a5ac-86de31fab6c1', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$Group:deleteTs', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('408ef4ac-0b6d-fd78-e651-2e7ef8f5b62f', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$SessionLogEntry:address', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('1023370b-1d72-2e04-1023-f83e931fcf9e', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$User:middleName', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('87ff3f80-a001-fbbe-4a60-8f40f6d031f3', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$Role:sysTenantId', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('9f07f9f9-041d-f291-a885-d61546e793c6', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$User:version', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('8decc59e-d90a-8b76-a59d-3f88ea8f6f51', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$SessionLogEntry:lastAction', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('529d0320-e007-d034-e510-33309ddc99b5', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$SessionLogEntry:deletedBy', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('f7ef183f-252e-df87-a498-5444ef32505b', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$User:login', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('7b91507d-6a0d-794d-88c3-e1d08c8282f0', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$User:firstName', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('90c5c08a-5090-5fd9-4a99-58f6262d178b', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$Group:version', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('1adf7095-7330-ea9b-f5d3-982c94f0463d', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 20, 'billpractise_Bill:read', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('c594d9e4-9cec-28e4-eaf0-bf382432f856', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'billpractise_Bill:funds', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('c9b12cc6-8cdc-0b74-de7c-a61383aa32c6', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$Group:updateTs', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('0bf60b9b-7468-8add-377e-b80c946f261b', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'billpractise_Operation:deletedBy', 2, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('486302ce-fea7-d47e-e5cc-e5e8b452d2dd', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$SessionLogEntry:createdBy', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('779be798-c437-3016-0753-81be1ea46f8b', 1, '2021-07-16 01:11:42', 'admin', '2021-07-16 01:11:42', null, null, null, 10, 'billpractise_Operation.edit', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('12ef9d31-a74c-c512-eefb-1f261c4cdaf1', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$SessionLogEntry:sysTenantId', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('2224cf8e-0f41-75b0-a6b6-7c71f9effd92', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$SessionLogEntry:user', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('27be81c5-83d1-85ce-08e5-042aa921b36e', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$SessionLogEntry:clientInfo', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('d90b70fe-45f8-7447-e5fc-8e357b3b425d', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'billpractise_Bill:createdBy', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('bdf811e3-d89d-6963-174b-4d50253fa42e', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$Group:constraints', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('8d2a5249-639d-464c-ea48-65175a79b065', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'billpractise_Operation:id', 2, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('a9b00d92-4b79-1f45-0a50-5b00e7f2a54d', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$Group:id', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('84e6f50c-d909-85a7-5d04-95bbb3d000de', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'billpractise_Bill:updateTs', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('4d5a0e3a-9416-3f87-fdd3-64c69d940986', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 20, 'billpractise_Operation:delete', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('ceae494c-8b26-4785-73b2-2f8f994a37c1', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$Role:locName', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('692f60dc-a407-8979-3eef-0f39c4f56756', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$User:changePasswordAtNextLogon', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('d807fc96-4385-e0f1-aa4e-356b0fd6b3ef', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$Role:type', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('0c452f0d-0801-8e23-cf41-cf2042870c71', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$Role:locSecurityScope', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('dcc4ec0b-6be1-0c7c-e732-5af6c40a8061', 1, '2021-07-16 03:54:08', 'admin', '2021-07-16 03:54:08', null, null, null, 30, 'sec$User:group', 1, 'dfd07920-1a38-7670-a22c-748703919d83');
+
+insert into SEC_ROLE
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, NAME, LOC_NAME, DESCRIPTION, ROLE_TYPE, IS_DEFAULT_ROLE, SYS_TENANT_ID, SECURITY_SCOPE)
+values ('7b78b170-45fc-3fc8-798c-1c03163f06d3', 1, '2021-07-16 01:12:58', 'admin', '2021-07-16 01:12:58', null, null, null, 'EditBills', null, null, 0, null, null, 'GENERIC_UI');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('449eccea-9c58-b98e-1c77-2b1ed0485f86', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'billpractise_Bill:updateTs', 2, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('3f7b06df-9655-2498-29ff-09731b24f6c4', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$User:substitutions', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('d8a8c6dc-902f-c201-ede1-4074950e0fc6', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 20, 'sec$Role:read', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('6e8224f2-ca6b-9519-a4a6-d3d1ed81abfd', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$User:password', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('709fe4df-ddc1-444d-04cf-285b8018df51', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'billpractise_Operation:amount', 2, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('dee1475b-4e50-f819-8377-416d4877528f', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'billpractise_Operation:updateTs', 2, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('fb18d91a-9b55-c598-8003-d1ad7cd665a6', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$SessionLogEntry:substitutedUser', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('8dd39b2f-9c46-472d-fcb6-f2bda9cdc34b', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$Role:updatedBy', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('6efc2c2a-b5d7-29e7-76ca-25b1dd925913', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$SessionLogEntry:clientType', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('39cf7ca1-e0a7-c224-2d8c-b08ae6e0aa14', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$SessionLogEntry:user', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('f3202f05-cded-f15f-67c1-68ddf21960b3', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$SessionLogEntry:createTs', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('206c303c-c458-53c6-a1c8-520dd6bdd795', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$Group:hierarchyList', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('92bcc28e-ba2a-26d6-d522-b2e20b8995a4', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$User:sysTenantId', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('bef6cd89-1dcc-0319-b554-faad86f28585', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$User:timeZone', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('bbe91069-e11b-0495-04e0-9fa4517ca312', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$User:updatedBy', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('cc7cd057-4e89-0476-d8b0-9b09dd73633b', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 20, 'sec$Group:read', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('303df06b-b993-5d9b-abf4-f286847e8677', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$Group:sessionAttributes', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('fc6a7c46-2710-1b81-f75c-9912e9b0a965', 1, '2021-07-16 01:12:58', 'admin', '2021-07-16 01:12:58', null, null, null, 10, 'billpractise_Operation.browse', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('45f438c1-06d9-d310-fa95-9daaf159babc', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$Role:id', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('349dddd4-57d0-51e7-971d-8034715d3c2d', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'billpractise_Operation:date', 2, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('21cdc056-ae2a-0b88-47b2-b31bee6ae1d2', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$SessionLogEntry:sysTenantId', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('a52fcfec-43c8-ad97-3d34-9fd341888eda', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 20, 'billpractise_Bill:read', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('d9b86c06-f02c-0fca-2bdd-6749cd0bdcee', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$Role:locSecurityScope', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('bf3f97b3-69c5-4f2b-273d-3a8e0171ce8c', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 20, 'billpractise_Operation:read', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('bff1a06d-9a70-b476-f1a9-fd1781485240', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'billpractise_Operation:id', 2, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('9538dd0f-8969-602e-2960-200deefececf', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$User:email', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('946a3739-4364-72c9-ae7e-c6967ed842e3', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$User:passwordEncryption', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('152f40ec-4088-2579-d3e1-cea76e607e3a', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'billpractise_Bill:createdBy', 2, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('9c88677b-8c38-726a-4fa8-e09ca15bd4ff', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$Group:createTs', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('5f861d02-0c88-ec2c-6a0f-994894a26ff7', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$User:login', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('69aa4739-9a9f-9d7e-ba51-3a109dbe2dbe', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$Group:name', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('5ad5aee1-59d6-5092-208a-f108b6c6fc00', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$User:position', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('1406b39b-053a-e3b3-429b-0a8887fd85c0', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$Group:constraints', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('24f657a5-9935-527f-cc86-169c6d4f1077', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$Role:securityScope', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('5c70e457-6d15-0139-b91b-21cfba40a2a1', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$Role:description', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('a4c2de93-0064-6ac7-0452-98eb82da93ae', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$Role:type', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('3dd25cb1-7ca8-5c69-6e66-75e891bf98d5', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 20, 'billpractise_Bill:create', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('df6e7c8a-fb22-0e26-0592-e9440681b5f1', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'billpractise_Bill:operation', 2, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('7561b194-2005-638c-6fbb-5685aac963cc', 1, '2021-07-16 01:12:58', 'admin', '2021-07-16 01:12:58', null, null, null, 10, 'billpractise_Bill.edit', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('155b4c1e-1fb9-4c06-cc2e-0fdc918a68cb', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$Group:updateTs', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('31519b69-0fd3-efa9-332e-1b7968329e6c', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$Group:parent', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('8ffcd230-e533-42bb-d5e3-1b0c968b8e6c', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'billpractise_Bill:currency', 2, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('75994f6c-dc3d-6259-e96f-383a5c7bcff2', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$Role:locName', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('ec6cc4ed-ea5a-5890-1455-286ea3577274', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$Group:createdBy', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('6b54cfac-fa8a-c671-b537-0f5846cfaef5', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'billpractise_Bill:updatedBy', 2, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('c06d4d82-2c59-8d7b-dd0e-910c064251db', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$Role:createdBy', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('3ad7546f-cc3c-be62-c014-8d74960f36d1', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'billpractise_Operation:bill', 2, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('1c5f9545-e9be-45c0-895c-e2af17d16c1a', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'billpractise_Operation:deleteTs', 2, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('e9608590-5594-2732-53e5-1c328538e9e6', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$Role:name', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('4a293b7a-3fc7-d718-c21b-17f268fcecfd', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$User:firstName', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('3f4acb6f-af57-523b-0601-3730d229b734', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$SessionLogEntry:startedTs', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('84aa1e22-c2bb-5cce-2ff4-c7e2ae51abdf', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$User:userRoles', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('170306b0-7a5a-fa82-4187-478e7a1fd61b', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$Role:updateTs', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('0aae1ac6-82c8-9d97-739d-1c4a674779cd', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'billpractise_Bill:deleteTs', 2, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('b400a906-4dbb-796e-1113-8b8beadeb5fe', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$SessionLogEntry:userData', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('5566dbd8-ecaa-c3f9-9817-18191997dd18', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 20, 'billpractise_Bill:delete', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('59ca341b-9745-f727-f263-00b2de5bdd57', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$Group:deletedBy', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('9320847d-3df9-3b02-1dc8-84ff042b76d5', 1, '2021-07-16 01:12:58', 'admin', '2021-07-16 01:12:58', null, null, null, 10, 'billpractise_Operation.edit', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('05f54074-f658-a40a-f630-cd65c86bd19a', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$User:version', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('34e1753d-e3ce-99e2-a5e0-d2b3da996f42', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 20, 'billpractise_Operation:delete', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('433c0382-95bd-9511-f8c5-ba35815353c8', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$User:name', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('e3403acc-f965-3dbd-20aa-4a48b4272910', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$User:timeZoneAuto', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('b0163468-ca8c-a48a-133c-ecbe609bf9e3', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'billpractise_Operation:createTs', 2, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('4d52e730-b8c9-fe2f-b760-e90bba773d1b', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$User:ipMask', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('9c6485d7-42c0-86e0-be09-54119d091907', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$SessionLogEntry:lastAction', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('b1fcbac7-c359-9669-a86a-b74aefd59776', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'billpractise_Operation:createdBy', 2, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('5e0aeaf7-903f-180a-66de-8813844aa8de', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$SessionLogEntry:deletedBy', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('c1837a4d-7123-6ffc-56e7-bdcf0acbf367', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$SessionLogEntry:clientInfo', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('7cf9c29b-d615-86be-5d3c-b9cfedbb901d', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$Role:createTs', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('2d69f954-8521-2e2f-3cf1-6e5f8353a650', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'billpractise_Operation:comment', 2, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('c36bf21c-8caf-05a0-cfca-21ec3355d895', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$SessionLogEntry:createdBy', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('719ae6ce-21c9-d3c4-0a09-5b0c4c0cb8cf', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$User:changePasswordAtNextLogon', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('07537aa1-f2cd-7e6d-d59f-a7d37b95b62a', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 20, 'billpractise_Operation:update', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('551c31e3-b6ba-cbe3-82c9-cde6cf7cca54', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 20, 'sec$User:read', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('11deaee2-b8dd-5aa3-284b-42c651e9a282', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$User:id', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('009078c5-241c-8af4-ca12-bcbefa9d8524', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$Role:defaultRole', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('1d3a3c07-baa7-2de2-cfc7-d0a3d34a79fe', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$Role:version', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('f63564ab-e3bb-1f98-6232-dbbf522287bb', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'billpractise_Bill:version', 2, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('da6613fd-88d9-a0d0-2447-2de59ae6d37a', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$Group:version', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('d238d829-9f09-200d-e249-86d185e282c3', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$User:group', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('cfa8112d-0ffb-d431-35ec-75f6598d3875', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'billpractise_Bill:archive', 2, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('731c33a8-0af3-b4fe-e86d-bcd3da4569ed', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$User:active', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('a8ee5f52-da96-6420-e56e-6e6e4956f2ed', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 20, 'sec$SessionLogEntry:read', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('b83dcde5-0a31-39fb-1a4c-bcdcd548367b', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'billpractise_Bill:funds', 2, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('f98f4c04-8e4d-e7b8-6812-7b9d4f85f8c6', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$Role:deletedBy', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('04e5b354-98bf-2823-be79-20054fee9c0d', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$User:deleteTs', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('fef7428b-a492-3283-bb78-2340f2666887', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$User:loginLowerCase', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('7043ff69-6823-2979-7b63-ae4959835161', 1, '2021-07-16 01:12:58', 'admin', '2021-07-16 01:12:58', null, null, null, 10, 'billpractise_Bill.browse', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('8f31b9a0-1d79-1d2f-525e-55792d6bc832', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'billpractise_Bill:deletedBy', 2, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('2492b151-5014-0d68-ec3a-e95720a98bc7', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'billpractise_Bill:id', 2, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('435b0628-1205-ba99-8503-774486973780', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$User:createdBy', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('01d93e0a-5355-d28e-144b-239c862dc24d', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$User:middleName', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('e89793da-bb5b-21f2-23a7-83cf122c7660', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$User:deletedBy', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('19c9c16c-cc33-fe75-2c6e-b3258b534e38', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$SessionLogEntry:deleteTs', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('3b15e69a-11ab-3bdf-95a6-46500187bc4e', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'billpractise_Operation:updatedBy', 2, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('55aaf0d4-d53a-7497-7443-5bbab8995877', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$Group:id', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('ce46ab69-9d67-585e-2dd8-88ec267e909b', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'billpractise_Operation:deletedBy', 2, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('dfb3d7a6-99f0-839d-dde3-6cc66eca185f', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 20, 'billpractise_Operation:create', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('7ddfed19-2875-e8f9-2d1e-26110ba2a32c', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$Group:updatedBy', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('89aa99e0-5d38-4f23-d46a-79f2c018c61c', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$Role:deleteTs', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('5270eefe-2759-e7a4-6476-fe0016787ead', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$User:updateTs', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('a7495b58-b650-d952-2ff0-41db1bf4661e', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$SessionLogEntry:sessionId', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('90e9b73d-10a4-540b-81c9-55ec70bea537', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'billpractise_Operation:type', 2, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('6076d408-04b0-4e93-b855-3cb6212c7d4b', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 20, 'billpractise_Bill:update', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('1f274399-a822-df77-e484-769e49a122b0', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$Group:deleteTs', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('36926408-d4f3-5dfb-9350-421cc030f80f', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$Role:permissions', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('a114582e-df3e-7ad8-423f-0e8e52bf9b36', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$SessionLogEntry:address', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('85719c77-7822-a49a-68f3-f5eac8ec9fad', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'billpractise_Operation:version', 2, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('f5f6d36f-3483-f616-9309-56bbf80a1f5e', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$SessionLogEntry:id', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('210f09df-e49a-c966-ae8d-f2b902d16423', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$User:lastName', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('83c30fe2-3f67-e6f3-34cd-e66ace3059cf', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$SessionLogEntry:finishedTs', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('224770b9-0c89-88fd-44f3-3eabda7f3040', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$User:language', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('486dfda2-ed6f-606a-36d1-05372b603dbe', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$SessionLogEntry:version', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('979855dc-9692-de34-41e3-a6484db24e08', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$User:createTs', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('1fe4be6b-cbef-105a-5b7a-a5df9246cd2c', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$SessionLogEntry:updatedBy', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('f530e917-855f-a5de-926a-b4ec91861451', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$Role:sysTenantId', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('3ea8c1ad-67a5-dce0-4d2f-1035cee7bc45', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$User:groupNames', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('1d6ba1c8-9271-716f-b867-a3ab5ee3ca68', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'billpractise_Bill:name', 2, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('445804ce-0e5d-30f4-011f-c6a5d37b9604', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$SessionLogEntry:updateTs', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('c7770f82-4de6-e92a-58bf-9e4c9e643a55', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'billpractise_Operation:category', 2, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('2d62d049-81e8-fd9d-2e2a-f56b7dbd325e', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$Group:sysTenantId', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('a6f6b1f6-5585-31a5-5aab-e0f6abdf5e5c', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'sec$SessionLogEntry:server', 1, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
+
+insert into SEC_PERMISSION
+(ID, VERSION, CREATE_TS, CREATED_BY, UPDATE_TS, UPDATED_BY, DELETE_TS, DELETED_BY, PERMISSION_TYPE, TARGET, VALUE_, ROLE_ID)
+values ('61bde60b-5d8d-e063-286f-b66d16f0d955', 1, '2021-07-16 03:54:56', 'admin', '2021-07-16 03:54:56', null, null, null, 30, 'billpractise_Bill:createTs', 2, '7b78b170-45fc-3fc8-798c-1c03163f06d3');
