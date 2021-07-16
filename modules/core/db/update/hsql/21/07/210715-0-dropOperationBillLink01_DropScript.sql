@@ -1,0 +1,1 @@
+drop table BILLPRACTISE_OPERATION_BILL_LINK__U01446 if exists cascade ;

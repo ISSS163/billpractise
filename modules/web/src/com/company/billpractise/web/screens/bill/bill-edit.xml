@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/screen/window.xsd"
+        caption="msg://billEdit.caption"
+        focusComponent="form"
+        messagesPack="com.company.billpractise.web.screens.bill">
+    <data>
+        <instance id="billDc"
+                  class="com.company.billpractise.entity.Bill">
+            <view extends="_local">
+                <property name="operation" view="_minimal"/>
+            </view>
+            <loader/>
+        </instance>
+    </data>
+    <dialogMode height="600"
+                width="800"/>
+    <layout expand="editActions" spacing="true">
+        <form id="form" dataContainer="billDc">
+            <column width="350px">
+                <textField id="nameField" property="name"/>
+                <textField id="currencyField" property="currency"/>
+                <textField id="fundsField" property="funds"/>
+                <checkBox id="archiveField" property="archive"/>
+            </column>
+        </form>
+        <hbox id="editActions" spacing="true">
+            <button id="commitAndCloseBtn" action="windowCommitAndClose"/>
+            <button id="closeBtn" action="windowClose"/>
+        </hbox>
+    </layout>
+</window>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/screen/window.xsd"
+        caption="msg://operationEdit.caption"
+        focusComponent="form"
+        messagesPack="com.company.billpractise.web.screens.operation">
+    <data>
+        <instance id="operationDc"
+                  class="com.company.billpractise.entity.Operation">
+            <view extends="_local">
+                <property name="bill" view="_minimal">
+                    <property name="currency"/>
+                    <property name="funds"/>
+                </property>
+            </view>
+            <loader/>
+        </instance>
+    </data>
+    <dialogMode height="600"
+                width="800"/>
+    <layout expand="editActions" spacing="true">
+        <form id="form" dataContainer="operationDc">
+            <column width="350px">
+                <lookupField id="typeField" property="type"/>
+                <textField id="amountField" property="amount"/>
+                <dateField id="dateField" property="date"/>
+                <lookupField id="categoryField" property="category"/>
+                <textField id="commentField" property="comment"/>
+                <pickerField id="billField" property="bill">
+                    <actions>
+                        <action id="lookup" type="picker_lookup"/>
+                        <action id="clear" type="picker_clear"/>
+                    </actions>
+                </pickerField>
+            </column>
+        </form>
+        <hbox id="editActions" spacing="true">
+            <button id="commitAndCloseBtn" action="windowCommitAndClose"/>
+            <button id="closeBtn" action="windowClose"/>
+        </hbox>
+    </layout>
+</window>

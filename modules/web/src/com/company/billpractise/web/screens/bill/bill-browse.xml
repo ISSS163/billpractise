@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/screen/window.xsd"
+        xmlns:c="http://schemas.haulmont.com/cuba/screen/jpql_condition.xsd"
+        caption="msg://billBrowse.caption"
+        focusComponent="billsTable"
+        messagesPack="com.company.billpractise.web.screens.bill">
+    <data readOnly="true">
+        <collection id="billsDc"
+                    class="com.company.billpractise.entity.Bill">
+            <view extends="_local">
+                <property name="operation" view="_minimal"/>
+            </view>
+            <loader id="billsDl">
+                <query>
+                    <![CDATA[select e from billpractise_Bill e]]>
+                </query>
+            </loader>
+        </collection>
+    </data>
+    <dialogMode height="600"
+                width="800"/>
+    <layout expand="billsTable"
+            spacing="true">
+        <filter id="filter"
+                applyTo="billsTable"
+                dataLoader="billsDl">
+            <properties include=".*"/>
+        </filter>
+        <groupTable id="billsTable"
+                    width="100%"
+                    dataContainer="billsDc">
+            <actions>
+                <action id="create" type="create"/>
+                <action id="edit" type="edit"/>
+                <action id="remove" type="remove"/>
+            </actions>
+            <columns>
+                <column id="name"/>
+                <column id="currency"/>
+                <column id="funds"/>
+                <column id="archive"/>
+            </columns>
+            <rowsCount/>
+            <buttonsPanel id="buttonsPanel"
+                          alwaysVisible="true">
+                <button id="createBtn" action="billsTable.create"/>
+                <button id="editBtn" action="billsTable.edit"/>
+                <button id="removeBtn" action="billsTable.remove"/>
+            </buttonsPanel>
+        </groupTable>
+        <hbox id="lookupActions" spacing="true" visible="false">
+            <button action="lookupSelectAction"/>
+            <button action="lookupCancelAction"/>
+        </hbox>
+    </layout>
+</window>
